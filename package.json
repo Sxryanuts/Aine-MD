@@ -1,7 +1,7 @@
 {
-    "name": "Aine-Bot",
+    "name": "Sky-Bot",
     "version": "07.06.98",
-    "description": "Customizable WhatsApp Bot",
+    "description": "Kenapa",
     "depecrated": false,
     "main": "index.js",
     "directories": {
@@ -29,7 +29,7 @@
     ],
     "homepage": "https://github.com/Aiinne",
     "author": {
-        "name": "Muhammad Ridwan Reynaldy"
+        "name": "-"
     },
     "repository": {
         "type": "git",
