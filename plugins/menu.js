@@ -52,7 +52,7 @@ Hai, %ucapan %name! 👋
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
-  after: `*Made by ♡*
+  after: `*Made by*
 *%npmname* | %version
 ${'```%npmdesc```'}
 `,
@@ -157,10 +157,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendButton(m.chat, text.trim(), 'Made with ♡ by Aine', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
+    conn.sendButton(m.chat, text.trim(), 'Made by Sky', null, [['Donasi', '.donasi'],['Owner', '.owner']], m)
     /*conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
-      ['Donate', '/donasi'],
-      ['Sewa Bot', '/sewa'],
+      ['Dompet', '/dompet'],
+      ['profile', '/profile'],
       ['Owner', '/owner']
     ], m)*/
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
@@ -175,18 +175,18 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                             hydratedFooterText:'Ⓟ premium | Ⓛ limit',
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Website',
-                                    url: 'https://Ainebot.github.io/'
+                                    displayText: '-',
+                                    url: ''
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Donasi',
-                                    id: '/donasi'
+                                    displayText: 'dompet',
+                                    id: '/dompet'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Sewa',
-                                    id: '/sewa'
+                                    displayText: 'profile',
+                                    id: '/profile'
                                 }  
                             }, {
                                 quickReplyButton: {
