@@ -56,8 +56,8 @@ fs.watchFile(file_exif, () => {
 })
 
 // Sticker WM
-packname = iyahh
-author = sky
+packname = sticker_name
+author = sticker_author
 wm = '©Sky'
 
 Intervalmsg = 1800 //detik
