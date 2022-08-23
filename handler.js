@@ -32,7 +32,7 @@ module.exports = {
                 if (typeof user !== 'object') db.data.users[m.sender] = {}
                 if (user) {
                     if (!isNumber(user.exp)) user.exp = 0
-                    if (!isNumber(user.limit)) user.limit = 200
+                    if (!isNumber(user.limit)) user.limit = 1000
                     if (!isNumber(user.joinlimit)) user.joinlimit = 1
                     if (!isNumber(user.money)) user.money = 100000
                     if (!isNumber(user.bank)) user.bank = 1000000
@@ -54,7 +54,7 @@ module.exports = {
                     if (!isNumber(user.warn)) user.warn = 0
                     if (!isNumber(user.level)) user.level = 0
                     if (!('role' in user)) user.role = 'Beginner'
-                    if (!('autolevelup' in user)) user.autolevelup = true
+                    if (!('autolevelup' in user)) user.autolevelup = false
 
                     if (!isNumber(user.health)) user.health = 100
                     if (!isNumber(user.healtmonster)) user.healtmonster = 100
@@ -284,7 +284,7 @@ module.exports = {
                     if (!isNumber(user.lastlatih)) user.lastlatih = 0
                 } else db.data.users[m.sender] = {
                     exp: 0,
-                    limit: 200,
+                    limit: 1000,
                     joinlimit: 1,
                     spammer: 0,
                     limitspam: 0,
@@ -310,7 +310,7 @@ module.exports = {
                     expg: 0,
                     level: 0,
                     role: 'Beginner',
-                    autolevelup: true,
+                    autolevelup: false,
 
                     potion: 10,
                     trash: 0,
